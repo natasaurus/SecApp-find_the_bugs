@@ -1,0 +1,5 @@
+<script>
+const config = JSON.parse(document.getElementById("cfg").innerText);
+eval(config.script);
+</script>
+<pre id="cfg">{ "script": "alert('Hacked!')" }</pre>

@@ -1,0 +1,7 @@
+<input id="input" />
+<div id="output"></div>
+<script>
+document.getElementById("input").oninput = function () {
+  document.getElementById("output").innerHTML = "Bonjour " + this.value;
+};
+</script>

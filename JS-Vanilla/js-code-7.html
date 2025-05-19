@@ -1,0 +1,10 @@
+<script>
+function merge(a, b) {
+  for (let key in b) {
+    a[key] = b[key];
+  }
+}
+const obj = {};
+merge(obj, JSON.parse('{ "__proto__": { "admin": true } }'));
+console.log({}.admin);
+</script>

